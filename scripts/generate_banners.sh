@@ -72,6 +72,8 @@ while read -r row; do
         src_file="banners/375px-House_Vyrwel_2.svg.webp"
     elif [[ "$slug" == "vance_of_wayfarer's_rest" ]]; then
         src_file="banners/375px-House_Vance_of_Wayfarer's_Rest.svg.webp"
+    elif [[ "$slug" == "stonehouse" ]]; then
+        src_file="banners/375px-House_Stonehouse_2.svg.webp"
     else
         # Standard format
         # E.g., House_Bar_Emmon -> Bar_Emmon
@@ -166,12 +168,13 @@ for f in banners/*; do
         375px-House_Farwynd_of_the_Lonely_Light.svg.webp) continue ;;
         375px-House_Vyrwel_2.svg.webp) continue ;;
         "375px-House_Vance_of_Wayfarer's_Rest.svg.webp") continue ;;
+        375px-House_Stonehouse_2.svg.webp) continue ;;
     esac
 
     f_slug=$(echo "$bname" | sed -E 's/^[0-9]+px-House_//i' | sed -E 's/\.(svg\.)?(webp|png)$//i' | tr '[:upper:]' '[:lower:]' | tr ' ' '_')
 
     found=0
-    while IFS=',' read -r h _rest; do
+    while IFS=',' read -r h _rest || [[ -n "$h" ]]; do
         [[ "$h" == "HOUSE" || -z "$h" ]] && continue
         h_slug=$(echo "$h" | tr '[:upper:]' '[:lower:]' | tr ' ' '_')
         if [[ "$h_slug" == "$f_slug" ]]; then

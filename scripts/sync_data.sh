@@ -18,7 +18,7 @@ mkdir -p data
 echo "[" > "$OUT"
 
 first=true
-while IFS=',' read -r house region words source_val tier; do
+while IFS=',' read -r house region words source_val tier || [[ -n "$house" ]]; do
     # Skip header line
     [[ "$house" == "HOUSE" ]] && continue
     # Skip blank lines

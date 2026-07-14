@@ -1,94 +1,112 @@
 HOUSE,REGION,WORDS,SOURCE,TIER
-Allyrion,Dorne,No Foe May Pass,canon,minor
-Appleton,Reach,Our Bounty Endures,invented,minor
-Arryn,Vale,As High as Honor,canon,great
-Ashford,Reach,Our Sun Shines Bright,canon,minor
-Baelish,Vale/Riverlands,Rise From Nothing,invented,minor
-Ball,Reach,Steady and Sure,invented,minor
 Bar Emmon,Crownlands,Swift and Sharp,invented,minor
-Baratheon,Stormlands,Ours is the Fury,canon,great
-Beesbury,Reach,Beware Our Sting,canon,minor
-Blackmont,Dorne,Shadow of the Mountain,invented,minor
-Blacktyde,Iron Islands,Silent and Deep,invented,minor
-Blackwood,Riverlands,Here and Always,invented,important
-Bolton,North,Our Blades are Sharp,canon,important
-Bracken,Riverlands,None So Bold,invented,important
-Butterwell,Riverlands,Flowing with Bounty,invented,minor
+Brune of Brownhollow,Crownlands,Bear the Way,invented,minor
+Cargyll,Crownlands,Never Divided,invented,minor
 Celtigar,Crownlands,We Endure the Tide,invented,minor
-Clegane,Westerlands,Strength Without Mercy,invented,minor
-Connington,Stormlands,Loyalty Unto Death,invented,minor
-Corbray,Vale,Honor's Blade,invented,minor
-Crakehall,Westerlands,None so Fierce,canon,important
-Crane,Reach,Grace Takes Flight,invented,minor
+Chelsted,Crownlands,Fires of the Crown,invented,minor
 Darklyn,Crownlands,Shields of the Dusk,invented,minor
-Darry,Riverlands,Steadfast in Service,invented,minor
+Hayford,Crownlands,Bound by Loyalty,invented,minor
+Massey,Crownlands,Carved in Stone,invented,minor
+Rosby,Crownlands,Providing for the Realm,invented,minor
+Staunton,Crownlands,Rest in Our Strength,invented,minor
+Stokeworth,Crownlands,Proud to Be Faithful,canon,minor
+Thorne,Crownlands,Strike with Iron,invented,minor
+Velaryon,Crownlands,The Old the True the Brave,canon,important
+Targaryen,Crownlands/Valyrian,Fire and Blood,canon,great
+Allyrion,Dorne,No Foe May Pass,canon,minor
+Blackmont,Dorne,Shadow of the Mountain,invented,minor
 Dayne,Dorne,Bright as the Morning,invented,important
-Dondarrion,Stormlands,Swift as Lightning,invented,minor
-Drumm,Iron Islands,Our Axes Never Dull,invented,minor
-Dustin,North,Old Blood, Old Bones,invented,minor
-Estermont,Stormlands,Loyal to the Storm,invented,minor
-Farman,Westerlands,The Wind Our Steed,canon,minor
-Farwynd,Iron Islands,Beyond the Reach of Men,invented,minor
-Fell,Stormlands,Watchers in the Woods,invented,minor
-Florent,Reach,Bright and Bold,invented,minor
-Frey,Riverlands,We Stand Together,invented,important
-Gardener,Reach,Growing Ever Since,invented,minor
 Gargalen,Dorne,Sand and Steel,invented,minor
-Glover,North,Loyal in Deed,invented,minor
+Jordayne,Dorne,Let It Be Written,invented,minor
+Manwoody,Dorne,Rest in Our Shadow,invented,minor
+Martell,Dorne,Unbowed Unbent Unbroken,canon,great
+Uller,Dorne,Abandon All Hope,invented,minor
+Wyl,Dorne,Hidden in the Stone,invented,minor
+Yronwood,Dorne,We Guard the Way,canon,important
+Blacktyde,Iron Islands,Silent and Deep,invented,minor
+Drumm,Iron Islands,Our Axes Never Dull,invented,minor
+Farwynd,Iron Islands,Beyond the Reach of Men,invented,minor
 Goodbrother,Iron Islands,Brothers to the End,invented,minor
-Grafton,Vale,Trade and Steel,invented,minor
-Grandison,Reach,Rouse Me Not,canon,minor
 Greyjoy,Iron Islands,We Do Not Sow,canon,great
 Harlaw,Iron Islands,Wisdom of the Waves,invented,important
-Hayford,Crownlands,Bound by Loyalty,invented,minor
-Hightower,Reach,We Light the Way,canon,important
+Stonehouse,Iron Islands,Hard as the Rock,invented,minor
+Volmark,Iron Islands,Rise From the Tides,invented,minor
+Bolton,North,Our Blades are Sharp,canon,important
+Cassel,North,Loyal in Death,invented,minor
+Cerwyn,North,Honed and Ready,invented,minor
+Dustin,North,Old Blood, Old Bones,invented,minor
+Glover,North,Loyal in Deed,invented,minor
 Hornwood,North,Righteous in Wrath,canon,minor
 Karstark,North,The Sun of Winter,canon,important
-Lannister,Westerlands,Hear Me Roar!,canon,great
 Locke,North,We Hold the Keys,invented,minor
-Lynderly,Vale,Hidden in the Leaves,invented,minor
-Mallister,Riverlands,Above the Rest,canon,minor
-Manderly,North,Our Halls Are Open,invented,important
-Manwoody,Dorne,Rest in Our Shadow,invented,minor
-Marbrand,Westerlands,Burning Bright,canon,minor
-Martell,Dorne,Unbowed Unbent Unbroken,canon,great
-Massey,Crownlands,Carved in Stone,invented,minor
+Manderly,North,Faithful in the Deep,invented,important
 Mormont,North,Here We Stand,canon,minor
+Reed,North,Our Trees Have Eyes,invented,important
+Ryswell,North,Swift as the Wind,invented,minor
+Stark,North,Winter is Coming,canon,great
+Tallhart,North,Proud and Free,canon,minor
+Umber,North,Death Before Chains,canon,important
+Whitehill,North,Ever Higher,invented,minor
+Appleton,Reach,Our Bounty Endures,invented,minor
+Ashford,Reach,Our Sun Shines Bright,canon,minor
+Ball,Reach,Steady and Sure,invented,minor
+Beesbury,Reach,Beware Our Sting,canon,minor
+Crane,Reach,Grace Takes Flight,invented,minor
+Florent,Reach,Bright and Bold,invented,minor
+Gardener,Reach,Growing Ever Since,invented,minor
+Grandison,Reach,Rouse Me Not,canon,minor
+Hightower,Reach,We Light the Way,canon,important
+Merryweather,Reach,Behold Our Bounty,invented,minor
 Peake,Reach,Reaching Higher,invented,minor
 Penrose,Reach,Set Down Our Deeds,canon,minor
-Plumm,Westerlands,Come Try Me,canon,minor
-Redfort,Vale,As Strong as Stone,canon,minor
 Redwyne,Reach,Our Vintage Never Fades,invented,minor
-Reyne,Westerlands,None Shall Sing of Us,invented,minor
-Rosby,Crownlands,Providing for the Realm,invented,minor
 Rowan,Reach,Deep Roots Strong Boughs,invented,minor
 Roxton,Reach,Orphans of the Steel,invented,minor
-Royce,Vale,We Remember,canon,important
-Ryswell,North,Swift as the Wind,invented,minor
-Seaworth,Stormlands,Humble Beginnings Honest Deeds,invented,minor
 Selmy,Reach,Duty Above All,invented,minor
-Stark,North,Winter is Coming,canon,great
-Stokeworth,Crownlands,Proud to Be Faithful,canon,minor
-Strong,Riverlands,Strength in the Blood,invented,minor
-Swann,Stormlands,Grace in Battle,invented,minor
-Swyft,Westerlands,Awake! Awake!,canon,minor
-Tallhart,North,Proud and Free,canon,minor
-Targaryen,Crownlands/Valyrian,Fire and Blood,canon,great
 Tarly,Reach,First in Battle,canon,minor
-Tarth,Stormlands,Beauty and Steel,invented,important
-Templeton,Vale,Guided by the Stars,invented,minor
-Thorne,Crownlands,Strike with Iron,invented,minor
-Trant,Stormlands,So End Our Foes,canon,minor
-Tully,Riverlands,Family Duty Honor,canon,great
 Tyrell,Reach,Growing Strong,canon,great
-Umber,North,Death Before Chains,canon,important
-Vance of Wayfarer's Rest,Riverlands,Watching the Way,invented,minor
-Velaryon,Crownlands,The Old the True the Brave,canon,important
 Vyrwel,Reach,Shadow of the Wyvern,invented,minor
-Waynwood,Vale,Steady as the Mountain,invented,minor
 Webber,Reach,Cold as the Moat,invented,minor
-Westerling,Westerlands,Honor not Honors,canon,minor
+Blackwood,Riverlands,Here and Always,invented,important
+Bracken,Riverlands,None So Bold,invented,important
+Butterwell,Riverlands,Flowing with Bounty,invented,minor
+Darry,Riverlands,Steadfast in Service,invented,minor
+Frey,Riverlands,We Stand Together,invented,important
+Mallister,Riverlands,Above the Rest,canon,minor
+Mooton,Riverlands,Wisdom and Strength,invented,minor
+Piper,Riverlands,Brave and Beautiful,invented,minor
+Strong,Riverlands,Strength in the Blood,invented,minor
+Tully,Riverlands,Family Duty Honor,canon,great
+Vance of Wayfarer's Rest,Riverlands,Watching the Way,invented,minor
 Whent,Riverlands,Rising from the Ruin,invented,minor
-Wyl,Dorne,Hidden in the Stone,invented,minor
+Baratheon,Stormlands,Ours is the Fury,canon,great
+Connington,Stormlands,Loyalty Unto Death,invented,minor
+Dondarrion,Stormlands,Swift as Lightning,invented,minor
+Estermont,Stormlands,Loyal to the Storm,invented,minor
+Farring,Stormlands,Faith is Our Shield,invented,minor
+Fell,Stormlands,Watchers in the Woods,invented,minor
+Seaworth,Stormlands,Humble Beginnings Honest Deeds,invented,minor
+Swann,Stormlands,Grace in Battle,invented,minor
+Tarth,Stormlands,Beauty and Steel,invented,important
+Trant,Stormlands,So End Our Foes,canon,minor
 Wylde,Stormlands,Untamed and True,invented,minor
-Yronwood,Dorne,We Guard the Way,canon,important
+Arryn,Vale,As High as Honor,canon,great
+Corbray,Vale,Honor's Blade,invented,minor
+Grafton,Vale,Trade and Steel,invented,minor
+Lynderly,Vale,Hidden in the Leaves,invented,minor
+Redfort,Vale,As Strong as Stone,canon,minor
+Royce,Vale,We Remember,canon,important
+Templeton,Vale,Guided by the Stars,invented,minor
+Waynwood,Vale,Steady as the Mountain,invented,minor
+Baelish,Vale/Riverlands,Rise From Nothing,invented,minor
+Brax,Westerlands,We Ride Without Arms,invented,minor
+Clegane,Westerlands,Strength Without Mercy,invented,minor
+Crakehall,Westerlands,None so Fierce,canon,important
+Farman,Westerlands,The Wind Our Steed,canon,minor
+Lannister,Westerlands,Hear Me Roar!,canon,great
+Marbrand,Westerlands,Burning Bright,canon,minor
+Payne,Westerlands,We Bring Our Name,invented,minor
+Plumm,Westerlands,Come Try Me,canon,minor
+Reyne,Westerlands,None Shall Sing of Us,invented,minor
+Swyft,Westerlands,Awake! Awake!,canon,minor
+Westerling,Westerlands,Honor not Honors,canon,minor
