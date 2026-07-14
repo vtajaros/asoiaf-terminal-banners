@@ -14,7 +14,7 @@ There are two ways to install asoiaf-terminal-banners:
 
 ### 1. Arch Linux Native (Recommended for Arch users)
 
-If this repository is uploaded to the AUR (e.g. as `asoiaf-terminal-banners-git`), you can install it using an AUR helper like `yay`:
+Available on the Arch User Repository as [`asoiaf-terminal-banners-git`](https://aur.archlinux.org/packages/asoiaf-terminal-banners-git). You can install it using an AUR helper like `yay`:
 
 ```bash
 yay -S asoiaf-terminal-banners-git
