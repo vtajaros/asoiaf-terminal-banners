@@ -107,13 +107,28 @@ while read -r row; do
         # Run chafa without --fg-only to keep sigil quality
         chafa --format symbols --size 25x13 "$src_file" > "$out_file"
         
-        # Append styled text below
-        echo -e "${BOLD}House ${house}${RESET}" >> "$out_file"
+        # Calculate centering padding relative to banner width (25 columns)
+        target_width=25
+
+        name_str="House ${house}"
+        name_len=${#name_str}
+        name_pad=$(( (target_width - name_len) / 2 ))
+        (( name_pad < 0 )) && name_pad=0
+        name_indent=$(printf '%*s' "$name_pad" "")
+
         if [[ "$source_val" != "canon" ]]; then
-            echo -e "${ITALIC}\"${words}\" *${RESET}" >> "$out_file"
+            words_str="\"${words}\" *"
         else
-            echo -e "${ITALIC}\"${words}\"${RESET}" >> "$out_file"
+            words_str="\"${words}\""
         fi
+        words_len=${#words_str}
+        words_pad=$(( (target_width - words_len) / 2 ))
+        (( words_pad < 0 )) && words_pad=0
+        words_indent=$(printf '%*s' "$words_pad" "")
+
+        # Append styled centered text below
+        echo -e "${name_indent}${BOLD}${name_str}${RESET}" >> "$out_file"
+        echo -e "${words_indent}${ITALIC}${words_str}${RESET}" >> "$out_file"
         
         success=$((success + 1))
     else
