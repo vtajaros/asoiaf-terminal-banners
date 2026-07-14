@@ -1,27 +1,32 @@
-# Maintainer: Your Name <youremail@domain.com>
+# Maintainer: vtajaros
 pkgname=asoiaf-terminal-banners-git
-pkgver=1.0.0
+pkgver=r1.1a2b3c4
 pkgrel=1
 pkgdesc="A Song of Ice and Fire / Game of Thrones Terminal Banners - Random ANSI banners for your terminal"
 arch=('any')
-url="https://github.com/yourusername/asoiaf-terminal-banners"
+url="https://github.com/vtajaros/asoiaf-terminal-banners"
 license=('MIT')
 depends=('bash')
-makedepends=('chafa' 'jq')
-source=() # If publishing, you'd use ("git+https://github.com/yourusername/asoiaf-terminal-banners.git")
-md5sums=()
+makedepends=('git' 'chafa' 'jq')
+provides=("asoiaf-terminal-banners")
+conflicts=("asoiaf-terminal-banners")
+source=("git+https://github.com/vtajaros/asoiaf-terminal-banners.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/${pkgname%-git}"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
 
 build() {
-  # In a real PKGBUILD, we'd cd "$srcdir/${pkgname%-git}"
-  # For local testing, we are just in the repo root.
-  cd "$startdir"
+  cd "$srcdir/${pkgname%-git}"
   ./scripts/generate_banners.sh
 }
 
 package() {
-  cd "$startdir"
+  cd "$srcdir/${pkgname%-git}"
   
-  # Install the generated text banners
+  # Install the pre-rendered text banners
   install -dm755 "$pkgdir/usr/share/asoiaf-terminal-banners/banners"
   install -m644 out/*.txt "$pkgdir/usr/share/asoiaf-terminal-banners/banners/"
   
