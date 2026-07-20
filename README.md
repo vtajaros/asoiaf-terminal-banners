@@ -39,15 +39,29 @@ Then, add this to your `~/.bashrc`:
 [ -f /usr/share/archgot/archgot ] && source /usr/share/archgot/archgot
 ```
 
-### 2. Local Installation (For any distro or quick setup)
+### 2. Local Installation (Other Linux Distros, macOS, WSL, Git Bash)
 
-You can install it locally to your user profile by running:
+Works out-of-the-box on **Debian, Ubuntu, Fedora, Alpine, macOS (Bash/Zsh), WSL, and Git Bash for Windows**.
+
+Clone the repository and run the installer:
 
 ```bash
+git clone https://github.com/vtajaros/archgot-asoiaf-terminal-banners.git archgot
+cd archgot
 ./install.sh
 ```
 
-This script will automatically generate the banners, copy them to `~/.local/share/archgot/`, install the `archgot` command, and append the correct line to your `~/.bashrc`.
+This script automatically generates the banners, copies them to `~/.local/share/archgot/`, installs the `archgot` command to `~/.local/bin`, and hooks into your `~/.bashrc` and `~/.zshrc`.
+
+### 3. Native Windows PowerShell (Optional)
+
+If you use Windows Terminal / PowerShell outside of WSL or Git Bash, modern Windows Terminal supports ANSI colors natively!
+
+You can load a random banner in PowerShell by adding this line to your PowerShell `$PROFILE`:
+
+```powershell
+Get-Content "$HOME\.local\share\archgot\(Get-ChildItem $HOME\.local\share\archgot\*.txt | Where-Object Name -NE 'pool.txt' | Get-Random).Name"
+```
 
 Run `archgot` in your terminal or open a new terminal tab to see it in action!
 

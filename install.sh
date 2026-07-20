@@ -29,22 +29,26 @@ chmod +x "$BANNER_DIR/archgot"
 mkdir -p "$HOME/.local/bin"
 ln -sf "$BANNER_DIR/archgot" "$HOME/.local/bin/archgot"
 
-# 4. Add to .bashrc if not already there
+# 4. Add to shell RC files (~/.bashrc and ~/.zshrc if present)
 MARKER="# ArchGot - ASOIAF Terminal Banners"
-# Clean up older marker line if present
-sed -i '/# Game of Thrones Terminal Banner/d' "$BASHRC" 2>/dev/null || true
-sed -i '/# ASOIAF Terminal Banner/d' "$BASHRC" 2>/dev/null || true
-sed -i '/got-banner.sh/d' "$BASHRC" 2>/dev/null || true
-sed -i '|/usr/share/archgot/archgot|d' "$BASHRC" 2>/dev/null || true
+TARGET_RCS=("$BASHRC")
+[[ -f "$HOME/.zshrc" ]] && TARGET_RCS+=("$HOME/.zshrc")
 
-if ! grep -q "$MARKER" "$BASHRC"; then
-    echo "Adding dispatcher to $BASHRC..."
-    echo "" >> "$BASHRC"
-    echo "$MARKER" >> "$BASHRC"
-    echo "[ -f \"$BANNER_DIR/archgot\" ] && source \"$BANNER_DIR/archgot\"" >> "$BASHRC"
-    echo "Successfully added to ~/.bashrc"
-else
-    echo "Dispatcher already present in ~/.bashrc"
-fi
+for rc in "${TARGET_RCS[@]}"; do
+    sed -i '/# Game of Thrones Terminal Banner/d' "$rc" 2>/dev/null || true
+    sed -i '/# ASOIAF Terminal Banner/d' "$rc" 2>/dev/null || true
+    sed -i '/got-banner.sh/d' "$rc" 2>/dev/null || true
+    sed -i '|/usr/share/archgot/archgot|d' "$rc" 2>/dev/null || true
+
+    if ! grep -q "$MARKER" "$rc"; then
+        echo "Adding dispatcher to $rc..."
+        echo "" >> "$rc"
+        echo "$MARKER" >> "$rc"
+        echo "[ -f \"$BANNER_DIR/archgot\" ] && source \"$BANNER_DIR/archgot\"" >> "$rc"
+        echo "Successfully added to $rc"
+    else
+        echo "Dispatcher already present in $rc"
+    fi
+done
 
 echo "Installation complete! Run 'archgot' or open a new terminal tab to see your banner."
